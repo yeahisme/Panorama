@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+
+<script type="text/javascript">
+	if (!document.addEventListener) {
+		//excanvas.js 让 IE6~IE8 支持canvas
+		document.write('<script type="text/javascript" src="excanvas.js"><\/script>');	
+	}
+</script>
+<style>
+	.imgwrap{
+		width:800px;
+		margin:20px auto;
+	}
+	.intro{
+		width:800px;
+		margin:0px auto;
+		line-height:1.4em;
+		white-space:nowrap;
+		text-overflow:inherit;
+		overflow:scroll;
+	}
+	#img1{
+		display:none;
+	}
+</style>
+</head>
+
+<body>
+<p class="intro">var imgDestroy = new Panorama({id:"img1",dx:0.65,direction:"rtl",imageScale:1,verticalAlign:"middle"})</p>
+<div class="imgwrap">
+	<img id="img1" src="images/1.jpg" width="1024" height="198" alt=""/>
+</div>
+<script src="../Panorama.js"></script>
+<script>
+	window.onload=function(){
+		var imgDestroy1 = new Panorama({id:"img1",dx:1,canvasWidth:800,canvasHeight:198,direction:"ltr",imageScale:1,verticalAlign:"middle"})
+
+   }
+</script>
+</body>
+</html>
